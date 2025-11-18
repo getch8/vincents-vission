@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Hero from './components/Hero';
 import Gallery from './components/Gallery';
+import Studio from './components/Studio';
+import Vision from './components/Vision';
+import Letters from './components/Letters';
+import AudioGuide from './components/AudioGuide';
 import About from './components/About';
 import Visit from './components/Visit';
 import AiCurator from './components/AiCurator';
@@ -33,6 +37,10 @@ function App() {
   const navLinks = [
     { id: SectionId.HERO, label: 'Home' },
     { id: SectionId.GALLERY, label: 'Artworks' },
+    { id: SectionId.STUDIO, label: 'Studio' },
+    { id: SectionId.VISION, label: 'Vision' },
+    { id: SectionId.AUDIO, label: 'Listen' },
+    { id: SectionId.LETTERS, label: 'Letters' },
     { id: SectionId.ABOUT, label: 'About' },
     { id: SectionId.VISIT, label: 'Visit' },
   ];
@@ -105,6 +113,10 @@ function App() {
       <main>
         <Hero scrollToSection={scrollToSection} />
         <Gallery />
+        <Studio />
+        <Vision />
+        <AudioGuide />
+        <Letters />
         <About />
         <Visit />
       </main>

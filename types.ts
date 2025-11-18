@@ -16,6 +16,10 @@ export interface ChatMessage {
 export enum SectionId {
   HERO = 'hero',
   GALLERY = 'gallery',
+  STUDIO = 'studio',
+  VISION = 'vision',
+  LETTERS = 'letters',
+  AUDIO = 'audio',
   ABOUT = 'about',
   VISIT = 'visit',
 }
